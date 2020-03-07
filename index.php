@@ -1,3 +1,196 @@
+<?php
+
+
+$dataset = array
+
+                (
+
+                // Multidimensional array for ID, for and value attributes
+                
+                    'Question 1'=> [ 
+
+                        "Option 1" => "name_1",
+                        "Option 2" => "name_1",
+                        "Option 3" => "name_1",
+                        "Option 4" => "name_1"
+                    ],
+
+
+                    'Question 2' => [
+
+                        "Option 1" => "name_2",
+                        "Option 2" => "name_2",
+                        "Option 3" => "name_2",
+                        "Option 4" => "name_2"
+                    ],
+
+                    'Question 3' => [
+
+                        "Option 1" => "name_3",
+                        "Option 2" => "name_3",
+                        "Option 3" => "name_3",
+                        "Option 4" => "name_3"
+                    ],
+
+                    'Question 4' => [
+
+                        "Option 1" => "name_4",
+                        "Option 2" => "name_4",
+                        "Option 3" => "name_4",
+                        "Option 4" => "name_4"
+                    ],
+
+                    'Question 5' => [
+
+                        "Option 1" => "name_5",
+                        "Option 2" => "name_5",
+                        "Option 3" => "name_5",
+                        "Option 4" => "name_5"
+                    ],
+
+                    'Question 6' => [
+
+                        "Option 1" => "name_6",
+                        "Option 2" => "name_6",
+                        "Option 3" => "name_6",
+                        "Option 4" => "name_6"
+                    ],
+
+                    'Question 7' => [
+
+                        "Option 1" => "name_7",
+                        "Option 2" => "name_7",
+                        "Option 3" => "name_7",
+                        "Option 4" => "name_7"
+
+                    ],
+
+                    'Question 8' => [
+
+                        "Option 1" => "name_8",
+                        "Option 2" => "name_8",
+                        "Option 3" => "name_8",
+                        "Option 4" => "name_8"
+
+                    ],
+
+                    'Question 9' => [
+
+                        "Option 1" => "name_9",
+                        "Option 2" => "name_9",
+                        "Option 3" => "name_9",
+                        "Option 4" => "name_9"
+
+                    ],
+
+                    'Question 10' => [
+
+                        "Option 1" => "name_10",
+                        "Option 2" => "name_10",
+                        "Option 3" => "name_10",
+                        "Option 4" => "name_10"
+
+                    ],
+                    
+                    'Question 11' => [
+
+                        "Option 1" => "name_11",
+                        "Option 2" => "name_11",
+                        "Option 3" => "name_11",
+                        "Option 4" => "name_11"
+
+                    ],
+
+                    'Question 12' => [
+
+                        "Option 1" => "name_12",
+                        "Option 2" => "name_12",
+                        "Option 3" => "name_12",
+                        "Option 4" => "name_12"
+
+                    ],
+
+                    'Question 13' => [
+
+                        "Option 1" => "name_13",
+                        "Option 2" => "name_13",
+                        "Option 3" => "name_13",
+                        "Option 4" => "name_13"
+
+                    ],
+
+                    'Question 14' => [
+
+                        "Option 1" => "name_14",
+                        "Option 2" => "name_14",
+                        "Option 3" => "name_14",
+                        "Option 4" => "name_14"
+
+                    ],
+
+                    'Question 15' => [
+
+                        "Option 1" => "name_15",
+                        "Option 2" => "name_15",
+                        "Option 3" => "name_15",
+                        "Option 4" => "name_15"
+
+                    ],
+
+                    'Question 16' => [
+
+                        "Option 1" => "name_16",
+                        "Option 2" => "name_16",
+                        "Option 3" => "name_16",
+                        "Option 4" => "name_16"
+
+                    ],
+
+                    'Question 17' => [
+
+                        "Option 1" => "name_17",
+                        "Option 2" => "name_17",
+                        "Option 3" => "name_17",
+                        "Option 4" => "name_17"
+
+                    ],
+
+                    'Question 18' => [
+
+                        "Option 1" => "name_18",
+                        "Option 2" => "name_18",
+                        "Option 3" => "name_18",
+                        "Option 4" => "name_18"
+
+                    ],
+
+                    'Question 19' => [
+
+                        "Option 1" => "name_19",
+                        "Option 2" => "name_19",
+                        "Option 3" => "name_19",
+                        "Option 4" => "name_19"
+
+                    ],
+
+                    'Question 20' => [
+
+                        "Option 1" => "name_20",
+                        "Option 2" => "name_20",
+                        "Option 3" => "name_20",
+                        "Option 4" => "name_20"
+                    ]
+
+                );
+
+?>
+
+
+
+
+
+
+
 <!DOCTYPE html>
 
     <head>
@@ -11,11 +204,10 @@
     </head>
 
     <body>
+
         <header>
 
-
             <!-- Navbar -->
-
         
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">FuzzzFeed</a>
@@ -42,10 +234,8 @@
                 </div>
             </nav>
 
-
             <!-- jumbotron -->
         
-
             <div class="jumbotron jumbotron-fluid">
                 <div class="container text-center">
                   <h1 class="display-4">FuzzzFeed Logo Quiz</h1>
@@ -53,68 +243,37 @@
                 </div>
               </div>
 
-        </header>
+         </header>
 
-        <?php 
-
-            $questions = array(array());
-
-
-        ?>
-
-
-        <section>
-            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-
-
-                    <div class="question-1">
-                        <div class='container'>
-
-                            <h4>Question 1</h4>
-                            <p>This is question 1</p>
-
+         <div class="container">
+            <div class="form-container">
+                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+                    <?php foreach($dataset as $first => $questions) : ?>
+                        <h3><?php echo $first ?></h3>
                         
-                            <div class='row'>
-                                <img src="images/dangote-logo.png" alt="dangote logo">
-                            </div>
-                        
-
-                        
-                              <div class='col-lg-12 d-inline-flex border'>
-                                    <div class='radio-toolbar'>
-                                        <input id="option-1" type="radio" name="q-1" >
-                                        <label for="option-1" class="radio-label">Option 1</label>
-                                    </div>
-                                 <div class='row'>
-                                 <div class='radio-toolbar'>
-                                        <input id="option-2" type="radio" name="q-1" >
-                                        <label for="option-2" class="radio-label">Option 2</label>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                            <div class='row'>
-                                <div class='col-lg-12 d-inline-flex'>
-                                    <div class='radio-toolbar'>
-                                        <input id="option-3" type="radio" name="q-1" >
-                                        <label for="option-3" class="radio-label">Option 3</label>
-                                    </div>
-                                </div>
-
-                                
-                                    <div class='radio-toolbar'>
-                                        <input id="option-4" type="radio" name="q-1" >
-                                        <label for="option-4" class="radio-label">Option 4</label>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class='row'>
+                            <img src="images/dangote-logo.png" alt="dangote logo">
                         </div>
-                    </div>
+
+                        <?php foreach($questions as $label => $nameAttributes) : ?>
+                            <input id="<?php echo $label ?>" type="radio" name="<?php echo $nameAttributes ?>" >
+                            <label for="<?php echo $label ?>" class="radio-label"><?php echo $label ?>"</label>
+                        <?php endforeach; ?>
+                    <?php endforeach; ?> 
                     
-            </form>
-        </section>
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary">I'm Done</button>
+                    </div>
+                </form>
+            </div>
+         </div>
+
+
+        
+
+
+       
+
 
 
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
