@@ -1,194 +1,248 @@
 <?php
 
 
-$dataset = array
+$dataset = array(
 
-                (
-
-                // Multidimensional array for ID, for and value attributes
-                
-                    'Question 1'=> [ 
-
-                        "Option 1" => "name_1",
-                        "Option 2" => "name_1",
-                        "Option 3" => "name_1",
-                        "Option 4" => "name_1"
-                    ],
-
-
-                    'Question 2' => [
-
-                        "Option 1" => "name_2",
-                        "Option 2" => "name_2",
-                        "Option 3" => "name_2",
-                        "Option 4" => "name_2"
-                    ],
-
-                    'Question 3' => [
-
-                        "Option 1" => "name_3",
-                        "Option 2" => "name_3",
-                        "Option 3" => "name_3",
-                        "Option 4" => "name_3"
-                    ],
-
-                    'Question 4' => [
-
-                        "Option 1" => "name_4",
-                        "Option 2" => "name_4",
-                        "Option 3" => "name_4",
-                        "Option 4" => "name_4"
-                    ],
-
-                    'Question 5' => [
-
-                        "Option 1" => "name_5",
-                        "Option 2" => "name_5",
-                        "Option 3" => "name_5",
-                        "Option 4" => "name_5"
-                    ],
-
-                    'Question 6' => [
-
-                        "Option 1" => "name_6",
-                        "Option 2" => "name_6",
-                        "Option 3" => "name_6",
-                        "Option 4" => "name_6"
-                    ],
-
-                    'Question 7' => [
-
-                        "Option 1" => "name_7",
-                        "Option 2" => "name_7",
-                        "Option 3" => "name_7",
-                        "Option 4" => "name_7"
-
-                    ],
-
-                    'Question 8' => [
-
-                        "Option 1" => "name_8",
-                        "Option 2" => "name_8",
-                        "Option 3" => "name_8",
-                        "Option 4" => "name_8"
-
-                    ],
-
-                    'Question 9' => [
-
-                        "Option 1" => "name_9",
-                        "Option 2" => "name_9",
-                        "Option 3" => "name_9",
-                        "Option 4" => "name_9"
-
-                    ],
-
-                    'Question 10' => [
-
-                        "Option 1" => "name_10",
-                        "Option 2" => "name_10",
-                        "Option 3" => "name_10",
-                        "Option 4" => "name_10"
-
-                    ],
-                    
-                    'Question 11' => [
-
-                        "Option 1" => "name_11",
-                        "Option 2" => "name_11",
-                        "Option 3" => "name_11",
-                        "Option 4" => "name_11"
-
-                    ],
-
-                    'Question 12' => [
-
-                        "Option 1" => "name_12",
-                        "Option 2" => "name_12",
-                        "Option 3" => "name_12",
-                        "Option 4" => "name_12"
-
-                    ],
-
-                    'Question 13' => [
-
-                        "Option 1" => "name_13",
-                        "Option 2" => "name_13",
-                        "Option 3" => "name_13",
-                        "Option 4" => "name_13"
-
-                    ],
-
-                    'Question 14' => [
-
-                        "Option 1" => "name_14",
-                        "Option 2" => "name_14",
-                        "Option 3" => "name_14",
-                        "Option 4" => "name_14"
-
-                    ],
-
-                    'Question 15' => [
-
-                        "Option 1" => "name_15",
-                        "Option 2" => "name_15",
-                        "Option 3" => "name_15",
-                        "Option 4" => "name_15"
-
-                    ],
-
-                    'Question 16' => [
-
-                        "Option 1" => "name_16",
-                        "Option 2" => "name_16",
-                        "Option 3" => "name_16",
-                        "Option 4" => "name_16"
-
-                    ],
-
-                    'Question 17' => [
-
-                        "Option 1" => "name_17",
-                        "Option 2" => "name_17",
-                        "Option 3" => "name_17",
-                        "Option 4" => "name_17"
-
-                    ],
-
-                    'Question 18' => [
-
-                        "Option 1" => "name_18",
-                        "Option 2" => "name_18",
-                        "Option 3" => "name_18",
-                        "Option 4" => "name_18"
-
-                    ],
-
-                    'Question 19' => [
-
-                        "Option 1" => "name_19",
-                        "Option 2" => "name_19",
-                        "Option 3" => "name_19",
-                        "Option 4" => "name_19"
-
-                    ],
-
-                    'Question 20' => [
-
-                        "Option 1" => "name_20",
-                        "Option 2" => "name_20",
-                        "Option 3" => "name_20",
-                        "Option 4" => "name_20"
-                    ]
-
-                );
+    1 => array(
+                    'Question' => 'Question 1',
+                    'ans' => array(
+                        'A' => 'Lafarge',
+                        'B' => 'Dangote',
+                        'C' => 'Cementers',
+                        'D' => 'Builderhouse'   
+                    ),
+                    'CorrectAnswer' => 'B'
+                 ),
+    
+    2 => array(
+                    'Question' => 'Question 2',
+                    'ans' => array(
+                        'A' => 'Vans',
+                        'B' => 'Nike',
+                        'C' => 'Puma Apparel',
+                        'D' => 'Reebok'   
+                    ),
+                    'CorrectAnswer' => 'B'
+                 ),
+    
+    3 => array(
+    
+                    'Question' => 'Question 3',
+                    'ans' => array(
+                        'A' => 'Fanta',
+                        'B' => 'Sprite',
+                        'C' => 'Pepsi',
+                        'D' => 'Coca-cola'   
+                    ),
+                    'CorrectAnswer' => 'D'   
+                ),
+    
+    4 => array(
+    
+                    'Question' => 'Question 4',
+                    'ans' => array(
+                        'A' => 'Codespace',
+                        'B' => 'Appshop',
+                        'C' => 'Andela',
+                        'D' => 'Appiary'   
+                    ),
+                    'CorrectAnswer' => 'C'    
+                ),
+    
+    5 => array(
+    
+                    'Question' => 'Question 5',
+                    'ans' => array(
+                        'A' => 'Avengers',
+                        'B' => 'Autobots',
+                        'C' => 'Autorobots',
+                        'D' => 'Airforce'   
+                    ),
+                    'CorrectAnswer' => 'A'   
+                ),
+    
+    6 => array(
+    
+                    'Question' => 'Question 6',
+                    'ans' => array(
+                        'A' => 'Black Leopard',
+                        'B' => 'Black Cheetah',
+                        'C' => 'Black Panther',
+                        'D' => 'Black Cat'   
+                    ),
+                    'CorrectAnswer' => 'C'    
+                ),
+    
+    7 => array(
+    
+                    'Question' => 'Question 7',
+                    'ans' => array(
+                        'A' => 'Steve Rogers',
+                        'B' => 'American Shield',
+                        'C' => 'Bucky Barnes',
+                        'D' => 'Captain America'   
+                    ),
+                    'CorrectAnswer' => 'D'    
+                ),
+    
+    8 => array(
+    
+                    'Question' => 'Question 8',
+                    'ans' => array(
+                        'A' => 'Html',
+                        'B' => 'CSS',
+                        'C' => 'Angular',
+                        'D' => 'Android'   
+                    ),
+                    'CorrectAnswer' => 'C'    
+                ),
+    
+    9 => array(
+    
+                    'Question' => 'Question 9',
+                    'ans' => array(
+                        'A' => 'Google Chrome',
+                        'B' => 'Mozilla Firefox',
+                        'C' => 'Internet Explorer',
+                        'D' => 'Safari'   
+                    ),
+                    'CorrectAnswer' => 'A'       
+                ),
+    
+    10 => array(
+    
+                    'Question' => 'Question 10',
+                    'ans' => array(
+                         'A' => 'Afrodev',
+                         'B' => 'Y-Combinator',
+                         'C' => 'Edtech Hub',
+                         'D' => 'Injini'   
+                    ),
+                    'CorrectAnswer' => 'D'           
+                ),
+    
+    11 => array(
+    
+                    'Question' => 'Question 11',
+                    'ans' => array(
+                         'A' => 'Pin',
+                         'B' => 'Pintrest',
+                         'C' => 'Underpin',
+                         'D' => 'Pinball'   
+                    ),
+                    'CorrectAnswer' => 'B'            
+                ),
+    
+    12 => array(
+    
+                    'Question' => 'Question 12',
+                    'ans' => array(
+                         'A' => 'Dragonball Z',
+                         'B' => 'Yu-Gi-Oh',
+                         'C' => 'Pokemon',
+                         'D' => 'One Piece'   
+                    ),
+                    'CorrectAnswer' => 'C'                    
+                ),
+    
+    13 => array(
+    
+                    'Question' => 'Question 13',
+                    'ans' => array(
+                         'A' => 'Puma',
+                         'B' => 'Jaguar',
+                         'C' => 'Sprint',
+                         'D' => 'Zoom'   
+                    ),
+                    'CorrectAnswer' => 'A'                        
+                ),
+    
+    14 => array(
+    
+                    'Question' => 'Question 14',
+                    'ans' => array(
+                         'A' => 'Shoprite',
+                         'B' => 'PnP',
+                         'C' => 'Spar',
+                         'D' => 'Checkers'   
+                    ),
+                    'CorrectAnswer' => 'A'                            
+                ),
+    
+    15 => array(
+    
+                    'Question' => 'Question 15',
+                    'ans' => array(
+                        'A' => 'So good',
+                        'B' => 'Startup Grind',
+                        'C' => 'Steve Greg',
+                        'D' => 'St. Good'   
+                    ),
+                    'CorrectAnswer' => 'B'                               
+                ),
+    
+    16 => array(
+    
+                    'Question' => 'Question 16',
+                    'ans' => array(
+                        'A' => 'Techcrunch',
+                        'B' => 'Techcam',
+                        'C' => 'Techmag',
+                        'D' => 'Techcave'   
+                    ),
+                    'CorrectAnswer' => 'A'                                    
+                ),
+    
+    17 => array(
+    
+                    'Question' => 'Question 17',
+                    'ans' => array(
+                        'A' => 'Twitter',
+                        'B' => 'Facebook',
+                        'C' => 'Songbird',
+                        'D' => 'Skype'   
+                    ),
+                    'CorrectAnswer' => 'A'                                        
+                ),
+    
+     18 => array(
+    
+                    'Question' => 'Question 18',
+                    'ans' => array(
+                        'A' => 'Tinder',
+                        'B' => 'Flame',
+                        'C' => 'Vodafone',
+                        'D' => 'Hotline'   
+                    ),
+                    'CorrectAnswer' => 'C'                                           
+                ),
+    
+    19 => array(
+    
+                    'Question' => 'Question 19',
+                    'ans' => array(
+                        'A' => 'Square',
+                        'B' => 'Venmo',
+                        'C' => 'Zoona',
+                        'D' => 'M-Pesa'   
+                    ),
+                    'CorrectAnswer' => 'C'                                                
+                ),
+    
+    20 => array(
+    
+                    'Question' => 'Question 20',
+                    'ans' => array(
+                        'A' => 'Tinder',
+                        'B' => 'Flame',
+                        'C' => 'Vodafone',
+                        'D' => 'Hotline'   
+                    ),
+                    'CorrectAnswer' => 'C'                                                    
+                ),
+        )
 
 ?>
-
-
-
-
-
 
 
 <!DOCTYPE html>
@@ -199,7 +253,7 @@ $dataset = array
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="quizstylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
 
@@ -209,7 +263,7 @@ $dataset = array
 
             <!-- Navbar -->
         
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">FuzzzFeed</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -245,25 +299,72 @@ $dataset = array
 
          </header>
 
+
+        <!--Test Array-->
+
+        
+
+
+
          <div class="container">
             <div class="form-container">
-                <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-                    <?php foreach($dataset as $first => $questions) : ?>
-                        <h3><?php echo $first ?></h3>
+
+            <?php 
+
+                if(isset($_POST['ans'])) {
+                    $ans = $_POST['ans']; 
+                    $score = 0;
+
+                    foreach($dataset as $questionNum => $value) {
+                        echo '<h3>'.$value['Question'].'</h3><br/>';
+
+                        if ($ans[$questionNum] != $value['CorrectAnswer']) {
+                            echo '<span style="color: red;">'.$value['ans'][$ans[$questionNum]].'</span>';
+                        } else {
+                            $score++;
+                            echo '<span style="color: green;">'.$value['ans'][$ans[$questionNum]].'</span>';
+                        }
                         
-                        <div class='row'>
-                            <img src="images/dangote-logo.png" alt="dangote logo">
+                        }
+                        echo '<h3> You managed to guess '.$score++.'/20 correctly.</h3><br/>';
+                    } else {
+                
+
+            ?>
+
+
+            
+                <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                    <?php foreach($dataset as $questionNum => $value) { ?>
+                        <h3><?php echo $value['Question'] ; ?></h3>
+                        
+                        
+                        <div class='form-group row'>             
+                            <img src="images/<?php echo $value['Question']?>.png" alt="image">
                         </div>
 
-                        <?php foreach($questions as $label => $nameAttributes) : ?>
-                            <input id="<?php echo $label ?>" type="radio" name="<?php echo $nameAttributes ?>" >
-                            <label for="<?php echo $label ?>" class="radio-label"><?php echo $label ?>"</label>
-                        <?php endforeach; ?>
-                    <?php endforeach; ?> 
+
+                        <?php   
+                            foreach ($value['ans'] as $letter => $ans){
+                            $label = 'question-'.$questionNum.'-ans-'.$letter;
+                        ?>
+
+
+                            <div class='form-group row'>
+                                <div class="option-button">                   
+                                    <input id="<?php echo $label; ?>" type="radio" name="ans[<?php echo $questionNum; ?>]" value="<?php echo $letter;?>">
+                                    <label for="<?php echo $label; ?>"><?php echo $letter; ?>) <?php echo $ans; ?></label>
+                                </div>      
+                            </div>
+
+                                <?php } ?>
+                            <?php } ?>
+                            <?php } ?> 
                     
-                    <div class="row">
-                        <button type="submit" class="btn btn-primary">I'm Done</button>
-                    </div>
+                        <div class="form-group row">
+                            <button type="submit" class="btn btn-primary mb-2" name="submit">I'm Done</button>
+                            
+                        </div>
                 </form>
             </div>
          </div>
