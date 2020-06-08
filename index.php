@@ -10,19 +10,16 @@ require 'quiz_array.php';
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="quizstylesheet.css">
+        <title>Quiz Project</title>
         <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="stylesheets/style.css">
     </head>
 
     <body>
 
         
         <header>
-        <?php require 'header.php'; ?>
     
             <div class='header-container'>
                     <div class='header'>
@@ -45,6 +42,7 @@ require 'quiz_array.php';
             <?php 
                 if(isset($_POST['ans'])) {
                     $ans = $_POST['ans']; 
+                    //var_dump($_POST);
                     $score = 0;
 
                     foreach($dataset as $questionNum => $value) {
@@ -52,18 +50,22 @@ require 'quiz_array.php';
                         if ($ans[$questionNum] != $value['CorrectAnswer']) {
                         } else {
                             $score++;
-                        }
+                            }
                         }
 
                         echo '<h3> You managed to guess '.$score++.'/20 correctly.</h3><br/>';
 
-                        if ($score < 11) {
-                            echo "<h4>You only answered less than 50% of the questions correctly. Try taking the quiz again. You've got this!</h4>";
-                        } elseif ($score >= 11 || $score < 15) {
-                            echo '<h4>You answered 50% - 60% of all the questions. Nice try.</h4>';
+                        if ($score < 10) {
+                            echo "<h4>Less than 50% of your answers were correct. Have another go at answering the quiz.</h4>";
+                        } elseif ($score >= 11 && $score < 15) {
+                            echo '<h4>50% - 74% of your answers were answered correctly. Nice!</h4>';
                         } else {
-                            echo "<h4>We're impressed! You answered more then 75% of the questions correctly. Well done!</h4>";
+                            echo "<h4>Well done you managed to answer at least 75% of the questions correctly!</h4>";
                         }
+
+                        echo "<div class='row'>
+                                    <button type='submit' class='btn btn-warning btn-lg'><a href='index.php'>Play Again</a></button>
+                                </div>";
 
                     } else {
             ?>
@@ -95,7 +97,7 @@ require 'quiz_array.php';
                                 <?php } ?>
                             <?php } ?>
                                 <div class="row">
-                                    <button type="submit" class="btn btn-warning btn-lg btn-block" name="submit">Submit Answers</button>
+                                    <button type="submit" class="btn btn-warning btn-lg btn-block submit" name="submit">Submit Answers</button>
                                 </div>
                         <?php } ?> 
                 </form>
